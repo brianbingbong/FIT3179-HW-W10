@@ -12,16 +12,35 @@
 
     <script src="js/vega_lite_vis.js"></script>
 
+    <link rel="stylesheet" href="https://unpkg.com/purecss@2.0.6/build/pure-min.css" integrity="sha384-Uu6IeWbM+gzNVXJcM9XV3SohHtmWE+3VGi496jvgX1jyvDTXfdK+rfZc8C1Aehk5" crossorigin="anonymous">
+    <link rel="stylesheet" href="css/layout.css">
+
     <title>World Energy Usage</title>
 </head>
 
 <body>
-    <h1>Yearly Energy per Capita by Country</h1>
-    <div id="choropleth_map">
+    <h1>World Energy Usage</h1>
+    <div class="pure-g">
+        <div class="pure-u-1-2">
+            <h2>World Energy Usage Per Capita</h2>
+            <div id="choropleth_map"></div>
+        </div>
+        <div class="pure-u-1-8">
+            <p>Energy usage in developed coutnries like Australia, the United States and 
+                Canada are generally higher than undeveloped countries</p>
+        </div>
     </div>
 
-    <h1>Energy to CO2 Production</h1>
-    <div id="scatter_plot">
+    <div class="pure-g">
+        <div class="pure-u-1-2">
+            <h2>Energy to CO2 Production</h2>
+            <div id="scatter_plot"></div>
+        </div>
+        <div class="pure-u-1-8">
+            <p>Many countries which use a relatively high propertion of reusable/nuclear
+                energy have a better energy to CO2 ratio per capita
+            </p>
+        </div>
     </div>
 </body>
 

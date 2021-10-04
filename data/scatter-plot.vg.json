@@ -1,8 +1,8 @@
 {
   "$schema": "https://vega.github.io/schema/vega-lite/v5.json",
   "title": "Energy Usage against Carbon Dioxide Production",
-  "width": 600,
-  "height": 500,
+  "width": 500,
+  "height": 300,
   "data": {
     "url": "https://raw.githubusercontent.com/brianbingbong/energy-data-viz/main/data/worldometers_energy.csv"
   },
@@ -84,7 +84,7 @@
     {
       "mark": {
         "type": "point",
-        "size": 500,
+        "size": 200,
         "opacity": 0.8
       },
       "encoding": {
@@ -137,10 +137,10 @@
         "color": {
           "value": "black"
         },
-        "opacity": {
+        "size": {
           "condition": {
-            "test": "datum['name'] == 'China' || datum['name'] == 'United States' || datum['name'] == 'Australia' || datum['name'] == 'Montenegro'",
-            "value": 1
+            "test": "datum['name'] == 'China' || datum['name'] == 'United States' || datum['name'] == 'Australia' || datum['name'] == 'Montenegro' || datum['name'] == 'Russia' || datum['name'] == 'Inida' || datum['name'] == 'Japan'",
+            "value": 11.5
           },
           "value": 0
         },
@@ -168,5 +168,8 @@
         ]
       }
     }
-  ]
+  ],
+  "config": {
+    "background": "beige"
+  }
 }
